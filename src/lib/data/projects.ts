@@ -1,0 +1,40 @@
+export type Project = {
+  id: string;
+  name: string;
+  subtitle: string;
+  year: string;
+  status: string;
+  accent: string;
+  description: string;
+  features: string[];
+  tech: string[];
+  license: string;
+  licenseHref: string;
+  href: string;
+};
+
+export const projects: Project[] = [
+  {
+    id: 'csuam',
+    name: 'ЦСУАМ «Архивли»',
+    subtitle: 'Цифровая система управления архивными материалами школы',
+    year: '2026',
+    status: 'Открытый код',
+    accent: 'var(--color-brand-teal)',
+    description:
+      'Платформа для долгосрочного хранения, систематизации и учёта школьных материалов: наград, фотографий, видео, библиотеки и архивных документов. Экспонат живёт в карточке: файлы открываются прямо в браузере, у каждого есть состояние, местонахождение физического экземпляра и время происхождения.',
+    features: [
+      'Пять категорий материалов и поиск по ключевым словам, датам и категориям',
+      'Карточка экспоната с несколькими файлами и встроенным просмотрщиком',
+      'QR-код на печать — наклеивается на физический экземпляр',
+      'Прокат книг: сроки возврата, уведомления о просрочке, архив выдач',
+      'Аналитика, экспорт и импорт карточек в JSON и XML',
+      'Три роли: завуч, библиотекарь и учитель — с премодерацией материалов',
+      'Развёртывание одним скриптом: Docker, Caddy, TLS и резервные копии'
+    ],
+    tech: ['TypeScript', 'Vue', 'Tailwind CSS', 'Go', 'chi', 'MariaDB', 'S3 / MinIO', 'Docker', 'Caddy'],
+    license: 'AGPL v3',
+    licenseHref: 'https://www.gnu.org/licenses/agpl-3.0.html',
+    href: 'https://github.com/emostr/csuam'
+  }
+];
