@@ -37,7 +37,7 @@ export const stack: StackGroup[] = [
     items: [
       { id: 'chi', name: 'chi', color: '#5FD3E8', note: 'фреймворк для Go' },
       { id: 'node', name: 'Node.js', color: '#7DC96A', note: 'рантайм для JS' },
-      { id: 'express', name: 'Jakarta EE', color: '#FFB834', note: 'среда для Java},
+      { id: 'express', name: 'Express.js', color: '#FFB834', note: 'легкий фреймворк для Node'},
       { id: 'laravel', name: 'Laravel', color: '#FF4C3F', note: 'фреймворк для PHP' },
       { id: 'dotnet', name: '.NET', color: '#8B6FF0', note: 'фреймворк для C#' }
     ]
