@@ -35,11 +35,11 @@ export const stack: StackGroup[] = [
     title: 'Бэкенд',
     accent: 'var(--color-brand-yellow)',
     items: [
-      { id: 'chi', name: 'chi', color: '#5FD3E8', note: 'фреймворк для Go' },
+      { id: 'chi', name: 'chi', color: '#5FD3E8', note: 'легкий фреймворк для Go' },
       { id: 'node', name: 'Node.js', color: '#7DC96A', note: 'рантайм для JS' },
-      { id: 'express', name: 'Express.js', color: '#FFB834', note: 'легкий фреймворк для Node'},
-      { id: 'laravel', name: 'Laravel', color: '#FF4C3F', note: 'фреймворк для PHP' },
-      { id: 'dotnet', name: '.NET', color: '#8B6FF0', note: 'фреймворк для C#' }
+      { id: 'nest', name: 'NestJS', color: '#E0234E', note: 'enterprise-фреймворк для Node'},
+      { id: 'laravel', name: 'Laravel', color: '#FF4C3F', note: 'современный фреймворк для PHP' },
+      { id: 'dotnet', name: '.NET', color: '#8B6FF0', note: 'удобный фреймворк для C#' }
     ]
   },
   {
