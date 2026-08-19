@@ -10,7 +10,7 @@ const MAP = {
   svelte: 'svelte',
   go: 'go',
   node: 'nodedotjs',
-  express: 'express',
+  nest: 'nest',
   mariadb: 'mariadb',
   php: 'php',
   laravel: 'laravel',
