@@ -19,7 +19,7 @@ export const projects: Project[] = [
     name: 'ЦСУАМ «Архивли»',
     subtitle: 'Цифровая система управления архивными материалами школы',
     year: '2026',
-    status: 'Открытый код',
+    status: 'Доступна на GitHub',
     accent: 'var(--color-brand-teal)',
     description:
       'Платформа для долгосрочного хранения, систематизации и учёта школьных материалов: наград, фотографий, видео, библиотеки и архивных документов. Экспонат живёт в карточке: файлы открываются прямо в браузере, у каждого есть состояние, местонахождение физического экземпляра и время происхождения.',
@@ -32,7 +32,7 @@ export const projects: Project[] = [
       'Три роли: завуч, библиотекарь и учитель — с премодерацией материалов',
       'Развёртывание одним скриптом: Docker, Caddy, TLS и резервные копии'
     ],
-    tech: ['TypeScript', 'Vue', 'Tailwind CSS', 'Go', 'chi', 'MariaDB', 'S3 / MinIO', 'Docker', 'Caddy'],
+    tech: ['TypeScript', 'Vue', 'TailwindCSS', 'Go', 'chi', 'MariaDB', 'S3-хранилище MinIO', 'Docker', 'Caddy'],
     license: 'AGPL v3',
     licenseHref: 'https://www.gnu.org/licenses/agpl-3.0.html',
     href: 'https://github.com/emostr/csuam'
