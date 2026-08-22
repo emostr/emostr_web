@@ -9,7 +9,7 @@
     <BrandMark size={26} text="text-base" />
 
     <p class="text-sm text-faint">
-      © {year} emostr. Собрано на Svelte и Tailwind CSS.
+      © {year} emostr. Made on Svelte
     </p>
 
     <a
