@@ -87,7 +87,7 @@
               <span
                 class="text-[5rem] leading-none font-extrabold tracking-tighter opacity-20 md:text-[7rem]"
                 style="color: {project.accent}"
-                aria-hidden="true">01</span
+                aria-hidden="true">1</span
               >
             </div>
           </div>
