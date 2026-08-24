@@ -27,8 +27,9 @@ export const stack: StackGroup[] = [
     accent: 'var(--color-brand-purple)',
     items: [
       { id: 'svelte', name: 'Svelte', color: '#FF3E00' },
-      { id: 'vue', name: 'Vue', color: '#4FC08D' },
       { id: 'htmx', name: 'HTMX', color: '#3366CC' },
+      { id: 'vue', name: 'Vue', color: '#4FC08D' },
+      { id: 'next', name: 'NEXT,js', color: '#000000' },
       { id: 'tailwind', name: 'TailwindCSS', color: '#06B6D4' }
     ]
   },
