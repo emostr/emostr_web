@@ -19,7 +19,7 @@ const MAP = {
   docker: 'docker',
   github: 'github',
   telegram: 'telegram',
-  protonmail: 'protonmail'
+  protonmail: 'protonmail',
 };
 
 const lines = ['export const iconPaths: Record<string, string> = {'];
