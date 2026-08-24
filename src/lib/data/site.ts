@@ -31,7 +31,7 @@ export const contacts: Contact[] = [
     value: '@crefixa',
     href: 'https://t.me/crefixa',
     icon: 'telegram',
-    color: '#00c99f'
+    color: '#26A5E4'
   },
   {
     id: 'email',

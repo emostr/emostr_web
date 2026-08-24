@@ -1,7 +1,7 @@
 <script lang="ts">
   import { base } from '$app/paths';
 
-  const chips = ['Full-stack', 'Открытый код', 'Код вместе с ИИ', 'Прод под ключ'];
+  const chips = ['Full-stack', 'Открытый код', 'Разработка с ии', 'Прод под ключ'];
 </script>
 
 <section id="top" class="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24">
@@ -9,13 +9,6 @@
     class="shell grid items-center gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-16"
   >
     <div class="order-last lg:order-first">
-      <p class="enter label flex items-center gap-2.5 text-accent" style="--enter-delay: 60ms">
-        <span class="relative flex h-1.5 w-1.5">
-          <span class="absolute inline-flex h-full w-full animate-ping bg-accent opacity-70"></span>
-          <span class="relative inline-flex h-1.5 w-1.5 bg-accent"></span>
-        </span>
-        Креативная студия
-      </p>
 
       <h1
         class="enter mt-5 text-4xl leading-[1.05] font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
@@ -30,8 +23,8 @@
       </h1>
 
       <p class="enter mt-7 max-w-xl text-base text-muted md:text-lg" style="--enter-delay: 220ms">
-        emostr — студия цифровых продуктов. Проектирую архитектуру, пишу код вместе с ИИ и довожу
-        проект до работающего прода: интерфейс, API, база и развёртывание — в одних руках.
+        emostr — студия цифровых проектов. Проектирую архитектуру, пишу код с помощью ИИ-агентов и довожу
+        проект до работающего прода
       </p>
 
       <div class="enter mt-9 flex flex-wrap items-center gap-3" style="--enter-delay: 300ms">
