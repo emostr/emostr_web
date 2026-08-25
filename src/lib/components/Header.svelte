@@ -72,7 +72,7 @@
   <div class="shell flex h-16 items-center justify-between gap-4 md:h-20">
     <a href="#top" class="-m-2 p-2" onclick={close} aria-label="emostr — в начало">
       <BrandMark
-        size={scrolled ? 28 : 32}
+        size={scrolled ? 112 : 112}
         text="text-lg md:text-xl"
         class="transition-all duration-500"
       />

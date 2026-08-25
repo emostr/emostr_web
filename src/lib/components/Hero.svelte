@@ -14,17 +14,16 @@
         class="enter mt-5 text-4xl leading-[1.05] font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
         style="--enter-delay: 140ms"
       >
-        Собираем цифровые<br class="hidden sm:block" />
-        платформы
+        Продюсерская<br class="hidden sm:block" />
+        студия
         <span class="relative inline-block text-accent">
-          целиком
+            цифровых продуктов
           <span class="absolute -bottom-1 left-0 h-[3px] w-full bg-accent/40"></span>
         </span>
       </h1>
 
       <p class="enter mt-7 max-w-xl text-base text-muted md:text-lg" style="--enter-delay: 220ms">
-        emostr — студия цифровых проектов. Проектирую архитектуру, пишу код с помощью ИИ-агентов и довожу
-        проект до работающего прода
+        Мы — продюсерская студия цифровых проектов. Продумываем проекты, создаем архитектуру и доводим проект до идеального прода с помощью ИИ
       </p>
 
       <div class="enter mt-9 flex flex-wrap items-center gap-3" style="--enter-delay: 300ms">
@@ -89,7 +88,7 @@
 
 <style>
   .hero-logo {
-    animation: float-slow 8s ease-in-out infinite;
+    animation: float-slow 24s ease-in-out infinite;
     transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .hero-logo:hover {

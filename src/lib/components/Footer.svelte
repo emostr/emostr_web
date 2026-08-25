@@ -6,7 +6,7 @@
 
 <footer class="border-t border-line py-10">
   <div class="shell flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-    <BrandMark size={26} text="text-base" />
+    <BrandMark size={112} text="text-base" />
 
     <p class="text-sm text-faint">
       © {year} emostr. Made on Svelte

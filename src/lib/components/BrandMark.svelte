@@ -13,9 +13,9 @@
 
 <span class="flex items-center gap-2.5 {className}">
   <picture class="block shrink-0">
-    <source srcset="{base}/logo.webp" type="image/webp" />
+    <source srcset="{base}/LogoWhiteLetters.svg" type="image/svg" />
     <img
-      src="{base}/logo.png"
+      src="{base}/LogoWhiteLetters.svg"
       alt="Логотип emostr"
       width={size}
       height={size}
@@ -25,5 +25,4 @@
       fetchpriority={float ? 'high' : 'auto'}
     />
   </picture>
-  <span class="{text} font-extrabold tracking-tight lowercase">emostr</span>
 </span>
