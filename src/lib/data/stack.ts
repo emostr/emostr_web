@@ -16,9 +16,9 @@ export const stack: StackGroup[] = [
     title: 'Языки',
     accent: 'var(--color-brand-teal)',
     items: [
-      { id: 'typescript', name: 'TypeScript', color: '#4C9BE8' },
-      { id: 'php', name: 'PHP', color: '#9296D4' },
-      { id: 'go', name: 'Go', color: '#00ADD8' }
+
+      { id: 'php', name: 'PHP', color: '#9296D4' },      
+      { id: 'typescript', name: 'TypeScript', color: '#4C9BE8' }
     ]
   },
   {
