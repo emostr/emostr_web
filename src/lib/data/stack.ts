@@ -29,8 +29,7 @@ export const stack: StackGroup[] = [
       { id: 'svelte', name: 'Svelte', color: '#FF3E00' },
       { id: 'htmx', name: 'HTMX', color: '#3366CC' },
       { id: 'vue', name: 'Vue', color: '#4FC08D' },
-      { id: 'next', name: 'Next.js', color: '#FFFFFF' },
-      { id: 'tailwind', name: 'TailwindCSS', color: '#06B6D4' }
+      { id: 'next', name: 'Next.js', color: '#FFFFFF' }
     ]
   },
   {
