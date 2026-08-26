@@ -27,19 +27,14 @@ export const stack: StackGroup[] = [
     accent: 'var(--color-brand-purple)',
     items: [
       { id: 'svelte', name: 'Svelte', color: '#FF3E00' },
-      { id: 'htmx', name: 'HTMX', color: '#3366CC' },
-      { id: 'vue', name: 'Vue', color: '#4FC08D' },
-      { id: 'next', name: 'Next.js', color: '#FFFFFF' }
+      { id: 'htmx', name: 'HTMX', color: '#3366CC' }
     ]
   },
   {
     title: 'Бэкенд',
     accent: 'var(--color-brand-yellow)',
     items: [
-      { id: 'laravel', name: 'Laravel', color: '#FF4C3F' },
-      { id: 'node', name: 'Node.js', color: '#7DC96A' },
-      { id: 'nest', name: 'NestJS', color: '#E0234E' },
-      { id: 'rails', name: 'Ruby on Rails', color: '#D30001' }
+      { id: 'laravel', name: 'Laravel', color: '#FF4C3F' }
     ]
   },
   {
@@ -47,8 +42,7 @@ export const stack: StackGroup[] = [
     accent: 'var(--color-brand-red)',
     items: [
       { id: 'mariadb', name: 'MariaDB', color: '#7FB3C0' },
-      { id: 'postgres', name: 'PostgreSQL', color: '#4169E1' },
-      { id: 'sqlite', name: 'SQLite', color: '#003B57' }
+      { id: 'postgres', name: 'PostgreSQL', color: '#4169E1' }
     ]
   },
   {
