@@ -33,8 +33,8 @@ export const projects: Project[] = [
       'Развёртывание одним скриптом: Docker, Caddy, TLS и резервные копии'
     ],
     tech: ['TypeScript', 'Vue', 'TailwindCSS', 'Go', 'chi', 'MariaDB', 'S3-хранилище MinIO', 'Docker', 'Caddy'],
-    license: 'AGPL v3',
-    licenseHref: 'https://www.gnu.org/licenses/agpl-3.0.html',
+    license: 'Apache License 2.0',
+    licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
     href: 'https://github.com/emostr/csuam'
   }
 ];
