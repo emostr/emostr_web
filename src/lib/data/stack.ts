@@ -13,13 +13,10 @@ export type StackGroup = {
 
 export const stack: StackGroup[] = [
   {
-    title: 'Языки',
+    title: 'Язык',
     accent: 'var(--color-brand-teal)',
     items: [
-      { id: 'typescript', name: 'TypeScript', color: '#4C9BE8' },
-      { id: 'php', name: 'PHP', color: '#9296D4' },
-      { id: 'go', name: 'Go', color: '#00ADD8' },
-      { id: 'ruby', name: 'Ruby', color: '#CC342D' }
+      { id: 'typescript', name: 'TypeScript', color: '#4C9BE8' }
     ]
   },
   {
@@ -37,18 +34,13 @@ export const stack: StackGroup[] = [
     title: 'Бэкенд',
     accent: 'var(--color-brand-yellow)',
     items: [
-      { id: 'laravel', name: 'Laravel', color: '#FF4C3F', note: 'PHP' },
-      { id: 'nest', name: 'NestJS', color: '#E0234E', note: 'TS' },
-      { id: 'rails', name: 'Ruby on Rails', color: '#D30001', note: 'Ruby' },
-      { id: 'fastify', name: 'Fastify', color: '#FFFFFF', note: 'TS' },
-      { id: 'nette', name: 'Nette', color: '#3484D2', note: 'PHP' }
+      { id: 'nest', name: 'NestJS', color: '#E0234E', note: 'с Fastify' }
     ]
   },
   {
     title: 'СУБД',
     accent: 'var(--color-brand-red)',
     items: [
-      { id: 'mariadb', name: 'MariaDB', color: '#7FB3C0' },
       { id: 'postgres', name: 'PostgreSQL', color: '#4169E1' }
     ]
   },
@@ -57,7 +49,6 @@ export const stack: StackGroup[] = [
     accent: 'var(--color-brand-teal)',
     items: [
       { id: 'nginx', name: 'NGINX', color: '#009639' },
-      { id: 'caddy', name: 'Caddy', color: '#1F88C0' },
       { id: 'debian', name: 'Debian', color: '#A81D33' }
     ]
   }
