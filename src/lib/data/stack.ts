@@ -16,9 +16,10 @@ export const stack: StackGroup[] = [
     title: 'Языки',
     accent: 'var(--color-brand-teal)',
     items: [
-
-      { id: 'php', name: 'PHP', color: '#9296D4' },      
-      { id: 'typescript', name: 'TypeScript', color: '#4C9BE8' }
+      { id: 'typescript', name: 'TypeScript', color: '#4C9BE8' },
+      { id: 'php', name: 'PHP', color: '#9296D4' },
+      { id: 'go', name: 'Go', color: '#00ADD8' },
+      { id: 'ruby', name: 'Ruby', color: '#CC342D' }
     ]
   },
   {
@@ -26,14 +27,21 @@ export const stack: StackGroup[] = [
     accent: 'var(--color-brand-purple)',
     items: [
       { id: 'svelte', name: 'Svelte', color: '#FF3E00' },
-      { id: 'htmx', name: 'HTMX', color: '#3366CC' }
+      { id: 'htmx', name: 'HTMX', color: '#3366CC' },
+      { id: 'vue', name: 'Vue', color: '#4FC08D' },
+      { id: 'react', name: 'React', color: '#61DAFB' },
+      { id: 'next', name: 'Next.js', color: '#FFFFFF' }
     ]
   },
   {
     title: 'Бэкенд',
     accent: 'var(--color-brand-yellow)',
     items: [
-      { id: 'laravel', name: 'Laravel', color: '#FF4C3F' }
+      { id: 'laravel', name: 'Laravel', color: '#FF4C3F', note: 'PHP' },
+      { id: 'nest', name: 'NestJS', color: '#E0234E', note: 'TS' },
+      { id: 'rails', name: 'Ruby on Rails', color: '#D30001', note: 'Ruby' },
+      { id: 'fastify', name: 'Svelte', color: '#FF3E00', note: 'TS' },
+      { id: 'nette', name: 'Nette', color: '#FF3E00', note: 'PHP' }
     ]
   },
   {
