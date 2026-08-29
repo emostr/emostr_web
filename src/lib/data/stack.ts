@@ -41,7 +41,7 @@ export const stack: StackGroup[] = [
       { id: 'nest', name: 'NestJS', color: '#E0234E', note: 'TS' },
       { id: 'rails', name: 'Ruby on Rails', color: '#D30001', note: 'Ruby' },
       { id: 'fastify', name: 'Fastify', color: '#FFFFFF', note: 'TS' },
-      { id: 'nette', name: 'Nette', color: '#FF3E00', note: 'PHP' }
+      { id: 'nette', name: 'Nette', color: '#3484D2', note: 'PHP' }
     ]
   },
   {
