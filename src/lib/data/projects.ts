@@ -36,5 +36,25 @@ export const projects: Project[] = [
     license: 'Apache License 2.0',
     licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
     href: 'https://github.com/emostr/csuam'
+  },
+  {
+    id: 'psychologic',
+    name: 'Психолоджик',
+    subtitle: 'Кабинет школьного психолога',
+    year: '2026',
+    status: 'ГОТОВЫЙ ПРОДУКТ',
+    accent: 'var(--color-brand-purple)',
+    description:
+      'Платформа для школьных психологов, позволяющая проводить психологическое тестирование учеников',
+    features: [
+      'Тестирование учеников с помощью психологических опросников',
+      'Несколько встроенных тестов, возможность добавления своих',
+      'Удобная система учёта учеников и их результатов',
+      'Подробная аналитика'
+    ],
+    tech: ['TypeScript', 'Svelte', 'TailwindCSS', 'NestJS + Fastify', 'PostgreSQL', 'Docker', 'Caddy'],
+    license: 'Apache License 2.0',
+    licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
+    href: 'https://github.com/emostr/psychologic'
   }
 ];

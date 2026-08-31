@@ -87,7 +87,7 @@
               <span
                 class="text-[5rem] leading-none font-extrabold tracking-tighter opacity-20 md:text-[7rem]"
                 style="color: {project.accent}"
-                aria-hidden="true">1</span
+                aria-hidden="true"></span
               >
             </div>
           </div>
@@ -102,7 +102,7 @@
           <div>
             <p class="label text-faint">Следующий проект</p>
             <h3 class="mt-3 text-xl font-bold tracking-tight md:text-2xl">
-              Пока один. Но это пока.
+              Никому не ведано, что будет дальше. Ясно одно — это будет что-то интересное.
             </h3>
             <p class="mt-3 max-w-xl text-muted">
               Новые платформы уже в работе — как только их можно будет показать, они появятся здесь.
