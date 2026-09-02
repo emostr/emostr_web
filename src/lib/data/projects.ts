@@ -56,5 +56,25 @@ export const projects: Project[] = [
     license: 'Apache License 2.0',
     licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
     href: 'https://github.com/emostr/psychologic'
+  },
+  {
+    id: 'edwayspace',
+    name: 'edway.space',
+    subtitle: 'Платформа для удобного тестирования школьников',
+    year: '2026',
+    status: 'ГОТОВЫЙ ПРОДУКТ',
+    accent: 'var(--color-brand-red)',
+    description:
+      'Платформа для проведения тестирования школьников. Позволяет создавать тесты, проводить их и анализировать результаты.',
+    features: [
+      'Удобный визуальный редактор с поддержкой формул LaTeX',
+      'Аналитика результатов тестирования с графиками и диаграммами',
+      'Поддержка нескольких типов вопросов: тесты, тесты с несколькими вариантами ответа, ответы с развернутым текстом',
+      'Автоматическое распознование тестовых ответов'
+    ],
+    tech: ['Typescript', 'Next.js', 'TailwindCSS', 'NestJS + Fastify', 'PostgreSQL', 'Docker', 'Caddy'],
+    license: 'Apache License 2.0',
+    licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
+    href: 'https://github.com/emostr/edway-space'
   }
 ];
