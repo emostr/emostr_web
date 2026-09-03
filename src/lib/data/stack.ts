@@ -16,7 +16,8 @@ export const stack: StackGroup[] = [
     title: 'Язык',
     accent: 'var(--color-brand-teal)',
     items: [
-      { id: 'typescript', name: 'TypeScript', color: '#4C9BE8' }
+      { id: 'typescript', name: 'TypeScript', color: '#4C9BE8' },
+      { id: 'ruby', 'Ruby', color: '#CC342D' }
     ]
   },
   {
@@ -24,9 +25,6 @@ export const stack: StackGroup[] = [
     accent: 'var(--color-brand-purple)',
     items: [
       { id: 'svelte', name: 'Svelte', color: '#FF3E00' },
-      { id: 'htmx', name: 'HTMX', color: '#3366CC' },
-      { id: 'vue', name: 'Vue', color: '#4FC08D' },
-      { id: 'react', name: 'React', color: '#61DAFB' },
       { id: 'next', name: 'Next.js', color: '#FFFFFF' }
     ]
   },
@@ -34,7 +32,8 @@ export const stack: StackGroup[] = [
     title: 'Бэкенд',
     accent: 'var(--color-brand-yellow)',
     items: [
-      { id: 'nest', name: 'NestJS', color: '#E0234E', note: 'с Fastify' }
+      { id: 'nest', name: 'NestJS', color: '#E0234E', note: 'с Fastify' },
+      { id: 'rails', name: 'Ruby on Rails', color: '#D30001' }
     ]
   },
   {
@@ -48,7 +47,7 @@ export const stack: StackGroup[] = [
     title: 'Серверное',
     accent: 'var(--color-brand-teal)',
     items: [
-      { id: 'nginx', name: 'NGINX', color: '#009639' },
+      { id: 'caddy', name: 'Caddy', color: '#0000FF' },
       { id: 'debian', name: 'Debian', color: '#A81D33' }
     ]
   }
