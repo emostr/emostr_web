@@ -17,7 +17,7 @@ export const stack: StackGroup[] = [
     accent: 'var(--color-brand-teal)',
     items: [
       { id: 'typescript', name: 'TypeScript', color: '#4C9BE8' },
-      { id: 'ruby', 'Ruby', color: '#CC342D' }
+      { id: 'ruby', name: 'Ruby', color: '#CC342D' }
     ]
   },
   {
