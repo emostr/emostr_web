@@ -16,8 +16,9 @@ export const stack: StackGroup[] = [
     title: 'Язык',
     accent: 'var(--color-brand-teal)',
     items: [
-      { id: 'typescript', name: 'TypeScript', color: '#4C9BE8' },
-      { id: 'ruby', name: 'Ruby', color: '#CC342D' }
+      { id: 'php', name: 'PHP', color: '#777BB4' },
+      { id: 'ruby', name: 'Ruby', color: '#CC342D' },
+      { id: 'typescript', name: 'TypeScript', color: '#4C9BE8' }
     ]
   },
   {
@@ -25,14 +26,14 @@ export const stack: StackGroup[] = [
     accent: 'var(--color-brand-purple)',
     items: [
       { id: 'svelte', name: 'Svelte', color: '#FF3E00' },
-      { id: 'next', name: 'Next.js', color: '#FFFFFF' }
+      { id: 'react', name: 'React', color: '#61DAFB' }
     ]
   },
   {
     title: 'Бэкенд',
     accent: 'var(--color-brand-yellow)',
     items: [
-      { id: 'nest', name: 'NestJS', color: '#E0234E', note: 'с Fastify' },
+      { id: 'laravel', name: 'Laravel', color: '#FF2D20' },
       { id: 'rails', name: 'Ruby on Rails', color: '#D30001' }
     ]
   },
