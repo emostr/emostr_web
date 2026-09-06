@@ -24,7 +24,7 @@ export const stack: StackGroup[] = [
     title: 'Фронтенд',
     accent: 'var(--color-brand-purple)',
     items: [
-      { id: 'vue', name: 'Vue', color: '#4FC08D' },
+      { id: 'react', name: 'React', color: '#61DAFB' },
       { id: 'svelte', name: 'Svelte', color: '#FF3E00' }
     ]
   },
@@ -46,7 +46,7 @@ export const stack: StackGroup[] = [
     title: 'Серверное',
     accent: 'var(--color-brand-teal)',
     items: [
-      { id: 'caddy', name: 'Caddy', color: '#0000FF' },
+      { id: 'caddy', name: 'Caddy', color: '#1F88C0' },
       { id: 'debian', name: 'Debian', color: '#A81D33' }
     ]
   }
