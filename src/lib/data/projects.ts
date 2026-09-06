@@ -23,10 +23,7 @@ export const projects: Project[] = [
     accent: 'var(--color-brand-yellow)',
     description:
       'Уже скоро.',
-    tech: ['Ruby', 'Ruby on Rails', 'TypeScript', 'Vue', 'Tailwind CSS', 'Postgres', 'Caddy'],
-    license: 'Apache License 2.0',
-    licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
-    href: 'https://github.com/emostr/csuam'
+    tech: ['Ruby', 'Ruby on Rails', 'TypeScript', 'Vue', 'Tailwind CSS', 'Postgres', 'Caddy']
   },
   {
     id: 'psychologic',
