@@ -24,8 +24,8 @@ export const stack: StackGroup[] = [
     title: 'Фронтенд',
     accent: 'var(--color-brand-purple)',
     items: [
-      { id: 'svelte', name: 'Svelte', color: '#FF3E00' },
-      { id: 'react', name: 'React', color: '#61DAFB' }
+      { id: 'vue', name: 'Vue', color: '#4FC08D' },
+      { id: 'svelte', name: 'Svelte', color: '#FF3E00' }
     ]
   },
   {
