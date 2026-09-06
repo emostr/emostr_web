@@ -23,7 +23,9 @@ export const projects: Project[] = [
     accent: 'var(--color-brand-yellow)',
     description:
       'Уже скоро.',
-    tech: ['Ruby', 'Ruby on Rails', 'TypeScript', 'Vue', 'Tailwind CSS', 'Postgres', 'Caddy']
+    tech: ['Ruby', 'Ruby on Rails', 'TypeScript', 'Vue', 'Tailwind CSS', 'Postgres', 'Caddy'],
+    license: '— Проприетарная (SaaS-продукт)',
+    href: 'https://youtu.be/dQw4w9WgXcQ?si=2ElsCs2PnFe5fUgL'
   },
   {
     id: 'psychologic',
@@ -41,7 +43,7 @@ export const projects: Project[] = [
       'Подробная аналитика'
     ],
     tech: ['TypeScript', 'Svelte', 'Tailwind CSS', 'NestJS + Fastify', 'PostgreS', 'Docker', 'Caddy'],
-    license: 'Apache License 2.0',
+    license: '— Apache License 2.0',
     licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
     href: 'https://github.com/emostr/psychologic'
   },
@@ -61,7 +63,7 @@ export const projects: Project[] = [
       'Автоматическое распознование тестовых ответов'
     ],
     tech: ['Typescript', 'Next.js', 'Tailwind CSS', 'NestJS + Fastify', 'PostgreS', 'Docker', 'Caddy'],
-    license: 'Apache License 2.0',
+    license: '— Apache License 2.0',
     licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
     href: 'https://github.com/emostr/edway-space'
   },
@@ -84,7 +86,7 @@ export const projects: Project[] = [
       'Развёртывание одним скриптом: Docker, Caddy, TLS и резервные копии'
     ],
     tech: ['TypeScript', 'Vue', 'Tailwind CSS', 'Go', 'chi', 'MariaDB', 'S3-хранилище MinIO', 'Docker', 'Caddy'],
-    license: 'Apache License 2.0',
+    license: '— Apache License 2.0',
     licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
     href: 'https://github.com/emostr/csuam'
   }
