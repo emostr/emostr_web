@@ -23,7 +23,7 @@ export const projects: Project[] = [
     accent: 'var(--color-brand-yellow)',
     description:
       'Уже скоро.',
-    tech: ['Ruby', 'Ruby on Rails', 'TypeScript', 'Vue', 'Tailwind CSS', 'Postgres', 'Caddy'],
+    tech: ['Ruby', 'Ruby on Rails', 'TypeScript', 'React', 'Tailwind CSS', 'Postgres', 'Caddy'],
     license: '— Проприетарная (SaaS-продукт)',
     href: 'https://youtu.be/dQw4w9WgXcQ?si=2ElsCs2PnFe5fUgL'
   },
