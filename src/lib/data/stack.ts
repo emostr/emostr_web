@@ -16,7 +16,6 @@ export const stack: StackGroup[] = [
     title: 'Язык',
     accent: 'var(--color-brand-teal)',
     items: [
-      { id: 'php', name: 'PHP', color: '#777BB4' },
       { id: 'ruby', name: 'Ruby', color: '#CC342D' },
       { id: 'typescript', name: 'TypeScript', color: '#4C9BE8' }
     ]
@@ -33,7 +32,6 @@ export const stack: StackGroup[] = [
     title: 'Бэкенд',
     accent: 'var(--color-brand-yellow)',
     items: [
-      { id: 'laravel', name: 'Laravel', color: '#FF2D20' },
       { id: 'rails', name: 'Ruby on Rails', color: '#D30001' }
     ]
   },
