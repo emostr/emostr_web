@@ -15,24 +15,15 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'csuam',
-    name: 'ЦСУАМ «Архивли»',
-    subtitle: 'Цифровая система управления архивными материалами школы',
-    year: '2026',
-    status: 'Готовый продукт',
-    accent: 'var(--color-brand-teal)',
+    id: 'GroupEquity',
+    name: 'GroupEquity',
+    subtitle: 'SaaS-платформа для управления школьными проектами, которая измеряет персональный вклад каждого участника',
+    year: 'Конец 2026',
+    status: 'В РАЗРАБОТКЕ',
+    accent: 'var(--color-brand-yellow)',
     description:
-      'Платформа для долгосрочного хранения, систематизации и учёта школьных материалов: наград, фотографий, видео, библиотеки и архивных документов. Экспонат живёт в карточке: файлы открываются прямо в браузере, у каждого есть состояние, местонахождение физического экземпляра и время происхождения.',
-    features: [
-      'Пять категорий материалов и поиск по ключевым словам, датам и категориям',
-      'Карточка экспоната с несколькими файлами и встроенным просмотрщиком',
-      'Генерация QR-кодов, которые наклеиваются на физический экземпляр',
-      'Прокат книг: сроки возврата, уведомления о просрочке, архив выдач',
-      'Аналитика, экспорт и импорт карточек в JSON и XML',
-      'Три роли: завуч, библиотекарь и учитель (с премодерацией материалов)',
-      'Развёртывание одним скриптом: Docker, Caddy, TLS и резервные копии'
-    ],
-    tech: ['TypeScript', 'Vue', 'TailwindCSS', 'Go', 'chi', 'MariaDB', 'S3-хранилище MinIO', 'Docker', 'Caddy'],
+      'Уже скоро.',
+    tech: ['Ruby', 'Ruby on Rails', 'TypeScript', 'Vue', 'Tailwind CSS', 'Postgres', 'Caddy'],
     license: 'Apache License 2.0',
     licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
     href: 'https://github.com/emostr/csuam'
@@ -52,7 +43,7 @@ export const projects: Project[] = [
       'Удобная система учёта учеников и их результатов',
       'Подробная аналитика'
     ],
-    tech: ['TypeScript', 'Svelte', 'TailwindCSS', 'NestJS + Fastify', 'PostgreSQL', 'Docker', 'Caddy'],
+    tech: ['TypeScript', 'Svelte', 'Tailwind CSS', 'NestJS + Fastify', 'PostgreS', 'Docker', 'Caddy'],
     license: 'Apache License 2.0',
     licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
     href: 'https://github.com/emostr/psychologic'
@@ -72,9 +63,32 @@ export const projects: Project[] = [
       'Поддержка нескольких типов вопросов: тесты, тесты с несколькими вариантами ответа, ответы с развернутым текстом',
       'Автоматическое распознование тестовых ответов'
     ],
-    tech: ['Typescript', 'Next.js', 'TailwindCSS', 'NestJS + Fastify', 'PostgreSQL', 'Docker', 'Caddy'],
+    tech: ['Typescript', 'Next.js', 'Tailwind CSS', 'NestJS + Fastify', 'PostgreS', 'Docker', 'Caddy'],
     license: 'Apache License 2.0',
     licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
     href: 'https://github.com/emostr/edway-space'
+  },
+  {   
+    id: 'csuam',
+    name: 'ЦСУАМ «Архивли»',
+    subtitle: 'Цифровая система управления архивными материалами школы',
+    year: '2026',
+    status: 'Готовый продукт',
+    accent: 'var(--color-brand-teal)',
+    description:
+      'Платформа для долгосрочного хранения, систематизации и учёта школьных материалов: наград, фотографий, видео, библиотеки и архивных документов. Экспонат живёт в карточке: файлы открываются прямо в браузере, у каждого есть состояние, местонахождение физического экземпляра и время происхождения.',
+    features: [
+      'Пять категорий материалов и поиск по ключевым словам, датам и категориям',
+      'Карточка экспоната с несколькими файлами и встроенным просмотрщиком',
+      'Генерация QR-кодов, которые наклеиваются на физический экземпляр',
+      'Прокат книг: сроки возврата, уведомления о просрочке, архив выдач',
+      'Аналитика, экспорт и импорт карточек в JSON и XML',
+      'Три роли: завуч, библиотекарь и учитель (с премодерацией материалов)',
+      'Развёртывание одним скриптом: Docker, Caddy, TLS и резервные копии'
+    ],
+    tech: ['TypeScript', 'Vue', 'Tailwind CSS', 'Go', 'chi', 'MariaDB', 'S3-хранилище MinIO', 'Docker', 'Caddy'],
+    license: 'Apache License 2.0',
+    licenseHref: 'https://www.apache.org/licenses/LICENSE-2.0',
+    href: 'https://github.com/emostr/csuam'
   }
 ];
