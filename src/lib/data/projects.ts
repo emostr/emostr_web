@@ -15,19 +15,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'GroupEquity',
-    name: 'GroupEquity',
-    subtitle: 'SaaS-платформа для управления школьными проектами, которая измеряет персональный вклад каждого участника',
-    year: 'Конец 2026',
-    status: 'В РАЗРАБОТКЕ',
-    accent: 'var(--color-brand-yellow)',
-    description:
-      'Уже скоро.',
-    tech: ['Ruby', 'Ruby on Rails', 'TypeScript', 'React', 'Tailwind CSS', 'Postgres', 'Caddy'],
-    license: '— Проприетарная (SaaS-продукт)',
-    href: 'https://youtu.be/dQw4w9WgXcQ?si=2ElsCs2PnFe5fUgL'
-  },
-  {
     id: 'psychologic',
     name: 'Психолоджик',
     subtitle: 'Кабинет школьного психолога',
