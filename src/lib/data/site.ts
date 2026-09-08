@@ -36,10 +36,10 @@ export const contacts: Contact[] = [
   {
     id: 'email',
     label: 'Почта',
-    value: 'crefixa@proton.me',
-    href: 'mailto:crefixa@proton.me',
-    icon: 'protonmail',
-    color: '#b455ff'
+    value: 'mail@emostr.com',
+    href: 'mailto:mail@emostr.com',
+    icon: 'mail',
+    color: '#FFFFFF'
   }
 ];
 
