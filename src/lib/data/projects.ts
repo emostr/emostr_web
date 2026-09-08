@@ -15,6 +15,18 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: 'opora',
+    name: 'Опора',
+    subtitle: 'Платформа доступной психотерапии',
+    year: '2026',
+    status: 'В РАЗРАБОТКЕ',
+    accent: 'var(--color-brand-yellow)',
+    description: 'Уже скоро.',
+    tech: ['TypeScript', 'Svelte', 'Tailwind CSS', 'PHP', 'Laravel', 'MongoDB', 'PostgreSQL'],
+    license: '— Проприетарная (SaaS)',
+    href: 'https://oporaforyou.ru',
+  },
+  {
     id: 'psychologic',
     name: 'Психолоджик',
     subtitle: 'Кабинет школьного психолога',
