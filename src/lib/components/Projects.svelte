@@ -11,7 +11,6 @@
       label="Проекты"
       accent="var(--color-brand-yellow)"
       title="Что уже работает"
-      text="Пока витрина короткая — зато всё в ней настоящее, с открытым исходным кодом и живым развёртыванием."
     />
 
     <div class="mt-14 flex flex-col gap-8">
@@ -65,8 +64,8 @@
                   rel="noreferrer noopener"
                   class="group flex items-center gap-3 bg-ink px-5 py-3 font-bold text-bg transition-all duration-300 hover:gap-4"
                 >
-                  <TechIcon id="github" name="GH" size={18} />
-                  Открыть на GitHub
+                  <TechIcon id="web" name="Web" size={18} />
+                  Открыть
                   <span class="transition-transform duration-300 group-hover:translate-x-1">↗</span>
                 </a>
                 <a
