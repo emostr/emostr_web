@@ -17,6 +17,6 @@ export const stack: StackGroup[] = [
     accent: 'var(--color-brand-teal)',
     items: [
       { id: 'ruby', name: 'Ruby', color: '#CC342D' }
-];
+]
 
 export const stackFlat: Tech[] = stack.flatMap((group) => group.items);
