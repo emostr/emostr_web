@@ -7,6 +7,8 @@ export const site = {
     'emostr — студия цифровых платформ: порталы, панели управления и учётные системы. Полный цикл — от схемы базы до продакшн-деплоя, код пишется вместе с ИИ и проверяется вручную.'
 } as const;
 
+export const maintenance = true;
+
 export type Contact = {
   id: string;
   label: string;

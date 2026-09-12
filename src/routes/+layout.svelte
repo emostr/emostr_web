@@ -3,22 +3,31 @@
   import Backdrop from '$lib/components/Backdrop.svelte';
   import Header from '$lib/components/Header.svelte';
   import Footer from '$lib/components/Footer.svelte';
+  import { maintenance } from '$lib/data/site';
 
   let { children } = $props();
 </script>
 
-<a
-  href="#studio"
-  class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-accent focus:px-4 focus:py-2 focus:font-bold focus:text-on-accent"
->
-  Перейти к содержимому
-</a>
+{#if maintenance}
+  <Backdrop />
 
-<Backdrop />
-<Header />
+  <main>
+    {@render children?.()}
+  </main>
+{:else}
+  <a
+    href="#studio"
+    class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-accent focus:px-4 focus:py-2 focus:font-bold focus:text-on-accent"
+  >
+    Перейти к содержимому
+  </a>
 
-<main>
-  {@render children?.()}
-</main>
+  <Backdrop />
+  <Header />
 
-<Footer />
+  <main>
+    {@render children?.()}
+  </main>
+
+  <Footer />
+{/if}

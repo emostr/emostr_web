@@ -5,7 +5,8 @@
   import Stack from '$lib/components/Stack.svelte';
   import Projects from '$lib/components/Projects.svelte';
   import Contact from '$lib/components/Contact.svelte';
-  import { site } from '$lib/data/site';
+  import Maintenance from '$lib/components/Maintenance.svelte';
+  import { maintenance, site } from '$lib/data/site';
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -21,32 +22,43 @@
 </script>
 
 <svelte:head>
-  <title>{site.title}</title>
-  <meta name="description" content={site.description} />
-  <link rel="canonical" href={site.url} />
+  {#if maintenance}
+    <title>emostr — сайт на реконструкции</title>
+    <meta name="description" content="Сайт студии emostr временно на реконструкции. Связаться можно в Telegram или по почте." />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href={site.url} />
+  {:else}
+    <title>{site.title}</title>
+    <meta name="description" content={site.description} />
+    <link rel="canonical" href={site.url} />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="emostr" />
-  <meta property="og:locale" content="ru_RU" />
-  <meta property="og:title" content={site.title} />
-  <meta property="og:description" content={site.description} />
-  <meta property="og:url" content={site.url} />
-  <meta property="og:image" content={`${site.url}/og.jpg`} />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="emostr — креативная студия цифровых платформ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="emostr" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content={site.title} />
+    <meta property="og:description" content={site.description} />
+    <meta property="og:url" content={site.url} />
+    <meta property="og:image" content={`${site.url}/og.jpg`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="emostr — креативная студия цифровых платформ" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={site.title} />
-  <meta name="twitter:description" content={site.description} />
-  <meta name="twitter:image" content={`${site.url}/og.jpg`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={site.title} />
+    <meta name="twitter:description" content={site.description} />
+    <meta name="twitter:image" content={`${site.url}/og.jpg`} />
 
-  {@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`}
+    {@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`}
+  {/if}
 </svelte:head>
 
-<Hero />
-<StackTicker />
-<Studio />
-<Stack />
-<Projects />
-<Contact />
+{#if maintenance}
+  <Maintenance />
+{:else}
+    <Hero />
+    <StackTicker />
+    <Studio />
+    <Stack />
+    <Projects />
+    <Contact />
+{/if}
