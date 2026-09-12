@@ -4,24 +4,17 @@
 </script>
 
 <section class="relative flex min-h-svh flex-col items-center justify-center px-5 py-20 text-center">
-  <picture class="enter block" style="--enter-delay: 40ms">
-    <source srcset="{base}/logo.webp" type="image/webp" />
-    <img
-      src="{base}/logo.png"
-      alt="Логотип emostr"
-      width="160"
-      height="160"
-      fetchpriority="high"
-      draggable="false"
-      class="mark w-28 max-w-full select-none sm:w-36"
-    />
-  </picture>
+  <img
+    src="{base}/LogoWhiteLetters.svg"
+    alt="emostr"
+    width="384"
+    height="192"
+    fetchpriority="high"
+    draggable="false"
+    class="mark w-64 max-w-full select-none sm:w-80 md:w-96"
+  />
 
-  <p class="enter mt-8 text-3xl font-extrabold tracking-tight lowercase sm:text-4xl" style="--enter-delay: 120ms">
-    emostr
-  </p>
-
-  <p class="enter label mt-8 flex items-center gap-3 text-accent" style="--enter-delay: 200ms">
+  <p class="enter label mt-10 flex items-center gap-3 text-accent" style="--enter-delay: 200ms">
     <span class="h-px w-8 bg-accent"></span>
     Технические работы
     <span class="h-px w-8 bg-accent"></span>
@@ -39,11 +32,17 @@
     и сейчас.
   </p>
 
-  <div class="enter mt-10 h-1 w-64 max-w-full overflow-hidden bg-surface-3" style="--enter-delay: 440ms">
+  <div
+    class="enter mt-10 h-1 w-64 max-w-full overflow-hidden bg-surface-3"
+    style="--enter-delay: 440ms"
+  >
     <span class="bar block h-full w-1/3"></span>
   </div>
 
-  <ul class="enter mt-10 flex flex-wrap items-center justify-center gap-3" style="--enter-delay: 520ms">
+  <ul
+    class="enter mt-10 flex flex-wrap items-center justify-center gap-3"
+    style="--enter-delay: 520ms"
+  >
     {#each contacts as contact (contact.id)}
       <li>
         <a
@@ -62,7 +61,10 @@
 
 <style>
   .mark {
-    animation: float-slow 8s ease-in-out infinite;
+    height: auto;
+    animation:
+      enter-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both,
+      float-slow 8s ease-in-out 0.8s infinite;
   }
 
   .bar {
