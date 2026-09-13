@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "icons": "node scripts/gen-icons.mjs"
+    "icons": "node scripts/gen-icons.mjs",
+    "ascii": "node scripts/gen-ascii.mjs"
   },
   "devDependencies": {
     "@internationalized/date": "^3.12.4",

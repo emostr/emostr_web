@@ -21,7 +21,8 @@
     class="enter mt-6 text-4xl font-bold tracking-tight text-balance sm:text-5xl"
     style="--enter-delay: 120ms"
   >
-    Привет, я emostr
+    Привет, я Матвей Серов
+    (aka Crefixa)
   </h1>
 
   <p
