@@ -1,97 +1,51 @@
 <script lang="ts">
-  import { base } from '$app/paths';
-
-  const chips = ['Full-stack', 'Открытый код', 'Разработка с ии', 'Прод под ключ'];
+  import SendIcon from '@lucide/svelte/icons/send';
+  import BrandIcon from './BrandIcon.svelte';
+  import { Badge } from '$lib/components/ui/badge/index.js';
+  import { Button } from '$lib/components/ui/button/index.js';
+  import { githubUrl } from '$lib/data/site';
 </script>
 
-<section id="top" class="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24">
-  <div
-    class="shell grid items-center gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-16"
+<section id="top" class="mx-auto max-w-3xl px-5 pt-16 pb-6 sm:pt-24 sm:pb-10">
+  <div class="enter" style="--enter-delay: 40ms">
+    <Badge variant="outline" class="gap-1.5 py-1 pr-2.5 pl-2">
+      <span class="relative flex size-2">
+        <span class="absolute inline-flex size-full animate-ping rounded-full bg-ruby opacity-60"></span>
+        <span class="relative inline-flex size-2 rounded-full bg-ruby"></span>
+      </span>
+      Сейчас изучаю Ruby
+    </Badge>
+  </div>
+
+  <h1
+    class="enter mt-6 text-4xl font-bold tracking-tight text-balance sm:text-5xl"
+    style="--enter-delay: 120ms"
   >
-    <div class="order-last lg:order-first">
+    Привет, я emostr
+  </h1>
 
-      <h1
-        class="enter mt-5 text-4xl leading-[1.05] font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
-        style="--enter-delay: 140ms"
-      >
-        Продюсерская<br class="hidden sm:block" />
-        студия
-        <span class="relative inline-block text-accent">
-            цифровых продуктов
-          <span class="absolute -bottom-1 left-0 h-[3px] w-full bg-accent/40"></span>
-        </span>
-      </h1>
+  <p
+    class="enter mt-5 max-w-xl text-lg text-pretty text-muted-foreground"
+    style="--enter-delay: 200ms"
+  >
+    Это мой личный сайт. Сейчас разбираюсь с Ruby, код складываю на GitHub, а ещё у меня есть
+    пара небольших проектов, собранных вместе с нейросетью.
+  </p>
 
-      <p class="enter mt-7 max-w-xl text-base text-muted md:text-lg" style="--enter-delay: 220ms">
-        Мы — продюсерская студия цифровых проектов. Продумываем проекты, создаем архитектуру и доводим проект до идеального прода с помощью ИИ
-      </p>
-
-      <div class="enter mt-9 flex flex-wrap items-center gap-3" style="--enter-delay: 300ms">
-        <a
-          href="#projects"
-          class="group flex items-center gap-3 bg-accent px-6 py-3.5 font-bold text-on-accent transition-all duration-300 hover:bg-accent-strong hover:gap-4"
-        >
-          Смотреть проекты
-          <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
-        </a>
-        <a
-          href="#contact"
-          class="border border-line-strong px-6 py-3.5 font-bold transition-colors duration-300 hover:border-accent hover:text-accent"
-        >
-          Обсудить задачу
-        </a>
-      </div>
-
-      <ul class="enter mt-10 flex flex-wrap gap-x-6 gap-y-3" style="--enter-delay: 380ms">
-        {#each chips as chip (chip)}
-          <li class="label flex items-center gap-2 text-faint">
-            <span class="h-px w-4 bg-line-strong"></span>
-            {chip}
-          </li>
-        {/each}
-      </ul>
-    </div>
-
-    <div class="order-first flex justify-center lg:order-last lg:justify-end">
-      <div class="enter relative" style="--enter-delay: 40ms">
-        <div
-          class="pointer-events-none absolute inset-0 -z-10 scale-150 opacity-45 blur-3xl"
-          style="background: radial-gradient(circle at 50% 50%, rgba(0,201,159,0.35), rgba(180,85,255,0.22) 45%, transparent 70%)"
-          aria-hidden="true"
-        ></div>
-
-        <span
-          class="absolute -top-4 -left-4 h-8 w-8 border-t-2 border-l-2 border-brand-teal/70"
-          aria-hidden="true"
-        ></span>
-        <span
-          class="absolute -right-4 -bottom-4 h-8 w-8 border-r-2 border-b-2 border-brand-purple/70"
-          aria-hidden="true"
-        ></span>
-
-        <picture>
-          <source srcset="{base}/logo.webp" type="image/webp" />
-          <img
-            src="{base}/logo.png"
-            alt="Логотип студии emostr"
-            width="360"
-            height="360"
-            fetchpriority="high"
-            draggable="false"
-            class="hero-logo w-52 max-w-full select-none sm:w-64 lg:w-[22rem]"
-          />
-        </picture>
-      </div>
-    </div>
+  <div class="enter mt-8 flex flex-wrap gap-3" style="--enter-delay: 280ms">
+    <Button href={githubUrl} target="_blank" rel="noreferrer noopener" size="lg">
+      <BrandIcon id="github" />
+      Мой GitHub
+    </Button>
+    <Button
+      href="https://t.me/crefixa"
+      target="_blank"
+      rel="noreferrer noopener"
+      variant="outline"
+      size="lg"
+    >
+      <SendIcon />
+      Написать
+    </Button>
   </div>
 </section>
-
-<style>
-  .hero-logo {
-    animation: float-slow 24s ease-in-out infinite;
-    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .hero-logo:hover {
-    transform: rotate(-4deg) scale(1.04);
-  }
-</style>

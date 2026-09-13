@@ -1,21 +1,21 @@
 export const site = {
   name: 'emostr',
-  domain: 'emostr.com',
   url: 'https://emostr.com',
-  title: 'emostr — креативная студия цифровых платформ',
+  title: 'emostr — личный сайт',
   description:
-    'emostr — студия цифровых платформ: порталы, панели управления и учётные системы. Полный цикл — от схемы базы до продакшн-деплоя, код пишется вместе с ИИ и проверяется вручную.'
+    'Личный сайт emostr: изучаю Ruby, веду GitHub и собираю небольшие проекты вместе с нейросетью.'
 } as const;
 
-export const maintenance = true;
+export const maintenance = false;
+
+export const githubUrl = 'https://github.com/emostr';
 
 export type Contact = {
   id: string;
   label: string;
   value: string;
   href: string;
-  icon: string;
-  color: string;
+  icon: 'github' | 'telegram' | 'mail';
 };
 
 export const contacts: Contact[] = [
@@ -23,31 +23,27 @@ export const contacts: Contact[] = [
     id: 'github',
     label: 'GitHub',
     value: 'github.com/emostr',
-    href: 'https://github.com/emostr',
-    icon: 'github',
-    color: '#f5f5f5'
+    href: githubUrl,
+    icon: 'github'
   },
   {
     id: 'telegram',
     label: 'Telegram',
     value: '@crefixa',
     href: 'https://t.me/crefixa',
-    icon: 'telegram',
-    color: '#26A5E4'
+    icon: 'telegram'
   },
   {
     id: 'email',
     label: 'Почта',
     value: 'mail@emostr.com',
     href: 'mailto:mail@emostr.com',
-    icon: 'mail',
-    color: '#FFFFFF'
+    icon: 'mail'
   }
 ];
 
 export const nav = [
-  { href: '#studio', label: 'Студия' },
-  { href: '#stack', label: 'Стек' },
+  { href: '#ruby', label: 'Ruby' },
   { href: '#projects', label: 'Проекты' },
-  { href: '#contact', label: 'Контакты' }
+  { href: '#contacts', label: 'Контакты' }
 ];

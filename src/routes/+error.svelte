@@ -1,6 +1,9 @@
 <script lang="ts">
+  import ArrowLeftIcon from '@lucide/svelte/icons/arrow-left';
   import { base } from '$app/paths';
   import { page } from '$app/state';
+  import { Badge } from '$lib/components/ui/badge/index.js';
+  import { Button } from '$lib/components/ui/button/index.js';
 
   const isMissing = $derived(page.status === 404);
 </script>
@@ -10,38 +13,22 @@
   <meta name="robots" content="noindex" />
 </svelte:head>
 
-<section class="shell flex min-h-[80vh] flex-col justify-center py-24">
-  <p class="enter label flex items-center gap-3 text-brand-red">
-    <span class="h-px w-8 bg-brand-red"></span>
-    Ошибка {page.status}
-  </p>
-
-  <h1
-    class="enter mt-5 text-4xl leading-[1.05] font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
-    style="--enter-delay: 80ms"
-  >
+<section class="mx-auto flex min-h-[70vh] max-w-3xl flex-col justify-center px-5 py-20">
+  <div class="enter">
+    <Badge variant="outline">Ошибка {page.status}</Badge>
+  </div>
+  <h1 class="enter mt-5 text-4xl font-bold tracking-tight sm:text-5xl" style="--enter-delay: 80ms">
     {isMissing ? 'Такой страницы нет' : 'Что-то пошло не так'}
   </h1>
-
-  <p class="enter mt-6 max-w-xl text-muted md:text-lg" style="--enter-delay: 160ms">
+  <p class="enter mt-4 max-w-md text-muted-foreground" style="--enter-delay: 160ms">
     {isMissing
-      ? 'Возможно, ссылка устарела или в адресе опечатка. На главной есть всё: стек, проекты и контакты.'
-      : page.error?.message ?? 'Попробуйте обновить страницу или вернуться на главную.'}
+      ? 'Возможно, ссылка устарела или в адресе опечатка.'
+      : (page.error?.message ?? 'Попробуйте обновить страницу.')}
   </p>
-
-  <div class="enter mt-9 flex flex-wrap gap-3" style="--enter-delay: 240ms">
-    <a
-      href="{base}/"
-      class="group flex items-center gap-3 bg-accent px-6 py-3.5 font-bold text-on-accent transition-all duration-300 hover:gap-4 hover:bg-accent-strong"
-    >
-      <span class="transition-transform duration-300 group-hover:-translate-x-1">←</span>
+  <div class="enter mt-8" style="--enter-delay: 240ms">
+    <Button href="{base}/">
+      <ArrowLeftIcon />
       На главную
-    </a>
-    <a
-      href="{base}/#contact"
-      class="border border-line-strong px-6 py-3.5 font-bold transition-colors duration-300 hover:border-accent hover:text-accent"
-    >
-      Контакты
-    </a>
+    </Button>
   </div>
 </section>

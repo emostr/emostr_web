@@ -5,21 +5,9 @@ const require = createRequire(import.meta.url);
 const si = require('simple-icons');
 
 const MAP = {
-  typescript: 'typescript',
-  vue: 'vuedotjs',
-  svelte: 'svelte',
-  go: 'go',
-  node: 'nodedotjs',
-  nest: 'nest',
-  mariadb: 'mariadb',
-  php: 'php',
-  laravel: 'laravel',
-  dotnet: 'dotnet',
-  tailwind: 'tailwindcss',
-  docker: 'docker',
+  ruby: 'ruby',
   github: 'github',
-  telegram: 'telegram',
-  protonmail: 'protonmail',
+  telegram: 'telegram'
 };
 
 const lines = ['export const iconPaths: Record<string, string> = {'];

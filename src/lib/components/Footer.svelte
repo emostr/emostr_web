@@ -1,22 +1,15 @@
 <script lang="ts">
-  import BrandMark from './BrandMark.svelte';
+  import { Separator } from '$lib/components/ui/separator/index.js';
 
   const year = new Date().getFullYear();
 </script>
 
-<footer class="border-t border-line py-10">
-  <div class="shell flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-    <BrandMark size={112} text="text-base" />
-
-    <p class="text-sm text-faint">
-      © {year} emostr. Made on Svelte
-    </p>
-
-    <a
-      href="#top"
-      class="label link-underline text-muted transition-colors duration-300 hover:text-ink"
-    >
-      Наверх ↑
-    </a>
+<footer class="mx-auto max-w-3xl px-5 pb-10">
+  <Separator />
+  <div
+    class="flex flex-col gap-2 pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between"
+  >
+    <p>© {year} emostr</p>
+    <p>Сделано на Svelte и shadcn-svelte</p>
   </div>
 </footer>

@@ -1,32 +1,26 @@
 <script lang="ts">
   import Hero from '$lib/components/Hero.svelte';
-  import StackTicker from '$lib/components/StackTicker.svelte';
-  import Studio from '$lib/components/Studio.svelte';
-  import Stack from '$lib/components/Stack.svelte';
+  import Learning from '$lib/components/Learning.svelte';
   import Projects from '$lib/components/Projects.svelte';
-  import Contact from '$lib/components/Contact.svelte';
+  import Contacts from '$lib/components/Contacts.svelte';
   import Maintenance from '$lib/components/Maintenance.svelte';
-  import { maintenance, site } from '$lib/data/site';
+  import { githubUrl, maintenance, site } from '$lib/data/site';
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'emostr',
+    '@type': 'Person',
+    name: site.name,
     url: site.url,
-    logo: `${site.url}/logo.png`,
     description: site.description,
-    sameAs: ['https://github.com/emostr', 'https://t.me/crefixa'],
-    email: 'crefixa@proton.me',
-    knowsAbout: ['TypeScript', 'Vue', 'Svelte', 'Go', 'Node.js', 'PHP', 'Laravel', 'C#', '.NET', 'Java', 'MariaDB']
+    sameAs: [githubUrl, 'https://t.me/crefixa'],
+    knowsAbout: ['Ruby']
   };
 </script>
 
 <svelte:head>
   {#if maintenance}
     <title>emostr — сайт на реконструкции</title>
-    <meta name="description" content="Сайт студии emostr временно на реконструкции. Связаться можно в Telegram или по почте." />
     <meta name="robots" content="noindex" />
-    <link rel="canonical" href={site.url} />
   {:else}
     <title>{site.title}</title>
     <meta name="description" content={site.description} />
@@ -41,7 +35,6 @@
     <meta property="og:image" content={`${site.url}/og.jpg`} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="emostr — креативная студия цифровых платформ" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={site.title} />
@@ -55,10 +48,8 @@
 {#if maintenance}
   <Maintenance />
 {:else}
-    <Hero />
-    <StackTicker />
-    <Studio />
-    <Stack />
-    <Projects />
-    <Contact />
+  <Hero />
+  <Learning />
+  <Projects />
+  <Contacts />
 {/if}

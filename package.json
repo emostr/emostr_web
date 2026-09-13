@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Сайт-визитка креативной студии emostr",
+  "description": "Личный сайт emostr",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -12,14 +12,23 @@
     "icons": "node scripts/gen-icons.mjs"
   },
   "devDependencies": {
+    "@internationalized/date": "^3.12.4",
+    "@lucide/svelte": "^1.45.0",
     "@sveltejs/adapter-static": "^3.0.10",
     "@sveltejs/kit": "^2.70.2",
     "@sveltejs/vite-plugin-svelte": "^7.3.0",
     "@tailwindcss/vite": "^4.3.3",
+    "bits-ui": "^2.19.2",
+    "clsx": "^2.1.1",
+    "mode-watcher": "^1.1.0",
+    "shadcn-svelte": "^1.6.1",
     "simple-icons": "^16.28.0",
     "svelte": "^5.56.9",
     "svelte-check": "^4.7.6",
+    "tailwind-merge": "^3.7.0",
+    "tailwind-variants": "^3.3.1",
     "tailwindcss": "^4.3.3",
+    "tw-animate-css": "^1.4.0",
     "typescript": "^5.9.0",
     "vite": "^8.2.1"
   }
